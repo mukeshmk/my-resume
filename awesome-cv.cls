@@ -551,6 +551,12 @@
   \subsectionstyle{#1}
 }
 
+\newenvironment{cventries2}{
+  \begin{left}
+}{
+  \end{left}
+}
+
 % Define an environment for cventry
 \newenvironment{cventries}{
   \begin{center}
