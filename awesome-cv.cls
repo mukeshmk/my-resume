@@ -326,6 +326,11 @@
 % Usage: \twitter{<twitter handle>}
 \newcommand*{\twitter}[1]{\def\@twitter{#1}}
 
+% Defines writer's kaggle (optional)
+% Usage: \kaggle{<kaggle handle>}
+\newcommand*{\kaggle}[1]{\def\@kaggle{#1}}
+
+
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
 \renewcommand*{\quote}[1]{\def\@quote{#1}}
@@ -486,6 +491,16 @@
             }
             {\@headersocialsep}
           \href{https://twitter.com/\@twitter}{\faTwitter\ \@twitter}
+        }
+      \ifthenelse{\isundefined{\@kaggle}}
+        {}
+        {
+          \ifbool{isstart}
+            {
+              \setbool{istart}{false} 
+            }
+            {\@headersocialsep}
+          \href{https://kaggle.com/\@kaggle}{\faKaggle\ \@kaggle}
         }
       \ifthenelse{\isundefined{\@skype}}
         {}
