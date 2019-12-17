@@ -7,7 +7,7 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -43,7 +43,7 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
-\name{Arambakam} {Mukesh}
+\name{Mukesh} {Arambakam}
 \address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
 \mobile{(+353) 89-4960-450} 
 %%% Social
@@ -55,9 +55,10 @@
 %\kaggle{mukeshmk95}
 %%% Optionals
 \position{
-    {\enskip\cdotp\enskip}Data Scientist in the Making{\enskip\cdotp\enskip}
+    {\enskip\cdotp\enskip}
+    Data Scientist in the Making
+    {\enskip\cdotp\enskip}
     }
-\quote{``Be the change that you want to see in the world."}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,8 +66,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
-  {\today}
-  {Arambakam Mukesh~~~·~~~Résumé}
+  {}
+  {Mukesh Arambakam}
   {\thepage}
 
 \begin{document}
@@ -77,14 +78,13 @@
 %%% Contents for Page 1
 \import{\sectiondir}{personalsummary.tex}
 \import{\sectiondir}{education.tex}
-\import{\sectiondir}{experience.tex}
-\pagebreak
-
-%%% Contents for Page 2
 \import{\sectiondir}{skills.tex}
 \import{\sectiondir}{onlinecourses.tex}
 \import{\sectiondir}{projects.tex}
-\import{\sectiondir}{awards.tex}
+\pagebreak
+
+%%% Contents for Page 2
+\import{\sectiondir}{experience.tex}
 \import{\sectiondir}{extracurricular.tex}
 \import{\sectiondir}{responsibilities.tex}
 \import{\sectiondir}{hobbiesandintrests.tex}
