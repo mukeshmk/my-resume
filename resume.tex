@@ -43,9 +43,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
+%     SET ATS as 1 for the resume to be ATS friendly
+%     SET ATS as 0 otherwise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{ats}
-\setcounter{ats}{0}
+\setcounter{ats}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
+%     SET ATS as 1 for Data Science Resume
+%     SET ATS as 0 for Back End Developer Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{ds_or_be}
+\setcounter{ds_or_be}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Personal Data
@@ -53,13 +63,22 @@
 %%% Essentials
 \name{Mukesh} {Arambakam}
 \address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
-\mobile{(+353) 89-4960-450} 
 %%% Social
+\ifthenelse{\value{ats}=1}
+{
+\infomobile{(+353) 89-4960-450}
+\infoemail{amukesh.mk@gmail.com}
+\infohome{http://mukeshmk.github.io/}
+\infolinkedin{https://www.linkedin.com/in/mukeshmk95/}
+}
+{
+\mobile{(+353) 89-4960-450}
 \email{amukesh.mk@gmail.com}
 \homepage{\href{http://mukeshmk.github.io/}{mukeshmk.github.io}}
 \github{mukeshmk}
 \linkedin{mukeshmk95}
 \stackoverflow{4014678}{mukesh-a}
+}
 %\twitter{amukeshmk}
 %\kaggle{mukeshmk95}
 %%% Optionals
@@ -84,6 +103,8 @@
 \makecvheader
 
 %%% Import contents
+\ifthenelse{\value{ds_or_be}=1}
+{
 %%% Contents for Page 1
 \import{\sectiondir}{personalsummary-ds.tex}
 \import{\sectiondir}{skills.tex}
@@ -97,5 +118,21 @@
 \import{\sectiondir}{experience.tex}
 \import{\sectiondir}{extracurricular.tex}
 \import{\sectiondir}{hobbiesandintrests.tex}
+}
+{
+%%% Contents for Page 1
+\import{\sectiondir}{personalsummary-be.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{experience.tex}
+\pagebreak
 
+%%% Contents for Page 2
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{publications.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{onlinecourses.tex}
+\import{\sectiondir}{extracurricular.tex}
+\import{\sectiondir}{hobbiesandintrests.tex}
+
+}
 \end{document}
