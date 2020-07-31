@@ -288,6 +288,13 @@
 % Usage: \name{<position>}
 \newcommand*{\position}[1]{\def\@position{#1}}
 
+% Defines writer's infolink (optional use for ATS)
+% Usage: \infolink{info}
+\newcommand*{\infoemail}[1]{\def\@infoemail{#1}}
+\newcommand*{\infomobile}[1]{\def\@infomobile{#1}}
+\newcommand*{\infohome}[1]{\def\@infohome{#1}}
+\newcommand*{\infolinkedin}[1]{\def\@infolinkedin{#1}}
+
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
@@ -416,6 +423,30 @@
     \headersocialstyle{
       \newbool{isstart}
       \setbool{isstart}{true}
+      \ifthenelse{\isundefined{\@infomobile}}
+        {}
+        {
+          \@infomobile \quad|
+          \setbool{isstart}{false}
+        }
+    \ifthenelse{\isundefined{\@infoemail}}
+        {}
+        {
+          \@infoemail \quad|
+          \setbool{isstart}{false}
+        }
+      \ifthenelse{\isundefined{\@infolinkedin}}
+        {}
+        {
+          \@infolinkedin \quad|
+          \setbool{isstart}{false}
+        }
+     \ifthenelse{\isundefined{\@infohome}}
+        {}
+        {
+          \@infohome
+          \setbool{isstart}{false}
+        }
       \ifthenelse{\isundefined{\@mobile}}
         {}
         {

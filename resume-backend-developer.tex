@@ -39,6 +39,7 @@
 %%% Needed to divide into several files
 \usepackage{import}
 \usepackage{inputenc}
+\usepackage{ifthen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Personal Data
@@ -75,6 +76,12 @@
 \begin{document}
 %%% Make a header for CV with personal data
 \makecvheader
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{ats}
+\setcounter{ats}{0}
 
 %%% Import contents
 %%% Contents for Page 1

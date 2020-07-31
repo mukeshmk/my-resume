@@ -41,19 +41,26 @@
 \usepackage{inputenc}
 \usepackage{ifthen}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{ats}
+\setcounter{ats}{1}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
 \name{Mukesh} {Arambakam}
 \address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
-\mobile{(+353) 89-4960-450} 
+\infomobile{(+353) 89-4960-450}
+
 %%% Social
-\email{amukesh.mk@gmail.com}
-\homepage{\href{http://mukeshmk.github.io/}{mukeshmk.github.io}}
-\github{mukeshmk}
-\linkedin{mukeshmk95}
-\stackoverflow{4014678}{mukesh-a}
+\infoemail{amukesh.mk@gmail.com}
+\infohome{http://mukeshmk.github.io/}
+\infolinkedin{https://www.linkedin.com/in/mukeshmk95/}
+%https://github.com/mukeshmk
+%\stackoverflow{4014678}{mukesh-a}
 %\twitter{amukeshmk}
 %\kaggle{mukeshmk95}
 %%% Optionals
@@ -76,12 +83,6 @@
 \begin{document}
 %%% Make a header for CV with personal data
 \makecvheader
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcounter{ats}
-\setcounter{ats}{0}
 
 %%% Import contents
 %%% Contents for Page 1
