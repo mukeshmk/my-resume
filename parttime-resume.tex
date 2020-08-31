@@ -49,14 +49,6 @@
 \newcounter{ats}
 \setcounter{ats}{1}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     VARIABLE SET TO MAKE RESUME ATS COMPATIBLE
-%     SET DS_OR_BE as 1 for Data Science Resume
-%     SET DS_OR_BE as 0 for Back End Developer Resume
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcounter{ds_or_be}
-\setcounter{ds_or_be}{1}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,9 +71,7 @@
 \linkedin{mukeshmk95}
 \stackoverflow{4014678}{mukesh-a}
 }
-%\twitter{amukeshmk}
-%\kaggle{mukeshmk95}
-%%% Optionals
+
 \position{
     {\enskip\cdotp\enskip}
     Data Scientist in the Making
@@ -102,37 +92,89 @@
 %%% Make a header for CV with personal data
 \makecvheader
 
-%%% Import contents
-\ifthenelse{\value{ds_or_be}=1}
-{
-%%% Contents for Page 1
-\import{\sectiondir}{personalsummary-ds.tex}
-\import{\sectiondir}{skills.tex}
-\import{\sectiondir}{education.tex}
-\import{\sectiondir}{projects.tex}
-\pagebreak
+%% Summary
+\cvsection{Personal Summary}
+\begin{cventries}
+\lettertextstyle{
+    \begin{flushleft}
+    \quad\quad\quad I am a Bi-Lingual (English and Tamil), B.Tech Graduate and a Master’s student from Trinity College of Dublin, with 2 years of work experience at Oracle India, Pvt. Ltd. I am highly skilled with computers and have an excellent communication and inter-personal skills, with a background in retail and cash-handling. I am flexible to work at any time and all days of the week.
+    \end{flushleft}
+  }
+\end{cventries}
 
-%%% Contents for Page 2
-\import{\sectiondir}{publications.tex}
-\import{\sectiondir}{onlinecourses.tex}
-\import{\sectiondir}{experience.tex}
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{hobbiesandintrests.tex}
-}
-{
-%%% Contents for Page 1
-\import{\sectiondir}{personalsummary-be.tex}
-\import{\sectiondir}{skills.tex}
-\import{\sectiondir}{experience.tex}
-\pagebreak
+%% Skills
+\cvsection{Skills}
+\begin{cvskills}
+    \cvskill
+        {Soft Skills:}
+        {Communication, Problem Solving, Critical Thinking, Team Player, Time Management, Leadership, Negotiation}
+    \cvskill
+        {Computer Skills:}
+        {MS Office (Excel), Scheduling and other Advanced Computer Skills}
+\end{cvskills}
 
-%%% Contents for Page 2
-\import{\sectiondir}{education.tex}
-\import{\sectiondir}{publications.tex}
-\import{\sectiondir}{projects.tex}
-\import{\sectiondir}{onlinecourses.tex}
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{hobbiesandintrests.tex}
+%% Experience
+\cvsection{Relevant Experience}
+\begin{cventries}
+\cventry
+    {Retail Store Employee}
+    {Latta Super Market}
+    {Chennai, India}
+    {Jan. 2018 - Apr, 2018}
+    {
+      \begin{cvitems}
+        \item {Customer Assistant and Cashier.}
+        \item {Handled customer relations and inquires.}
+        \item {Increased sales through engagement with customers, though suggestive selling and sharing product knowledge.}
+        \item {Kept clientele informed by notifying them of preferred customer sales and other merchandise of potential interest.}
+      \end{cvitems}
+    }
+\cventry
+    {Shop Assistant}
+    {Amrita Super Market}
+    {Coimbatore, India}
+    {Jun. 2016 - May, 2017}
+    {
+      \begin{cvitems}
+        \item {Customer Assistant and Cashier.}
+        \item {Managed financial transactions.}
+        \item {Assisted with inventory, including receiving and stocking merchandise.}
+      \end{cvitems}
+    }
+\end{cventries}
 
-}
+%% Other Experience
+\cvsection{Other Experience}
+\begin{cventries}
+\cventry
+    {Data Scientist Intern}
+    {Augray Private, Ltd.}
+    {Remote Work}
+    {Jun. 2020 - Aug, 2020}
+    {}
+\cventry
+    {Application Engineer}
+    {Oracle India, Pvt. Ltd.}
+    {Bangalore, India}
+{Jul. 2017 - Aug. 2019}
+    {}
+\end{cventries}
+
+%% Education
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {M.Sc. in Data Science}
+    {Trinity College of Dublin}
+    {expecting for 1:1}
+    {2019 - 2020}
+    {}
+  \cventry
+    {B.Tech. in Computer Science and Engineering}
+    {Amrita School of Engineering}
+    {CGPA: 8.37/10.0}
+    {2013 - 2017}
+    {}
+\end{cventries}
+
 \end{document}
