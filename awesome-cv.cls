@@ -568,11 +568,11 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  \par%\addvspace{1.5ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak%\addvspace{1ex}
 }
 
 % Define a subsection for CV
@@ -582,21 +582,22 @@
   \subsectionstyle{#1}
 }
 
-\newenvironment{cventries2}{
-  \begin{left}
-}{
-  \end{left}
-}
-
 % Define an environment for cventry
 \newenvironment{cventries}{
   \begin{center}
 }{
   \end{center}
 }
+
+\newenvironment{cventries2}{
+  \begin{left}
+}{
+  \end{left}
+}
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{
+  \vspace{-1ex}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
@@ -606,6 +607,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
+  \vspace{-1ex}
 }
 
 % Define an environment for cvsubentry
@@ -634,6 +636,7 @@
 
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{
+  \vspace{-1ex}
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
@@ -659,6 +662,7 @@
 
 % Define an environment for cvskill
 \newenvironment{cvskills}{
+  \vspace{-1ex}
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
