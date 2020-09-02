@@ -1,22 +1,27 @@
 \cvsection{Projects}
 \begin{cventries}
-   \cventry
+   \cvproject
     {Image and Audio Captcha Solver}
-    {Captcha Solver}
+    %{Captcha Solver}
     {
     \ifthenelse{\value{ats}=1}
     {}
-    {\href{https://github.com/mukeshmk/image-audio-captcha}{\faGithubSquare\ captcha-solver}}
+    {\href{https://github.com/mukeshmk/image-audio-captcha}
+    {\faGithubSquare\ captcha-solver}}
     }
     {Oct. 2019}
     {
       \begin{cvitems}
+      \vspace{-0.5ex}
+        Image and Audio captchas of varying length were parallelly generated, andwere used after pre-processing to build a Convolutional Neural Networks using TensorFlow. The model was used to make real time predictions on captcha.
+        \comment{
         \item {Parallelized image and audio captcha solver based on TensorFlow’s Convolutional Neural Networks implementation.}
+        }
       \end{cvitems}
     }
-  \cventry
-    {Body Area Network Simulationr}
-    {BAN on AWS}
+  \cvproject
+    {Body Area Network Simulation}
+    %{BAN on AWS}
     {
     \ifthenelse{\value{ats}=1}
     {}
@@ -24,13 +29,17 @@
     }
     {Nov. 2019}
     {
-      \begin{cvitems}
-        \item {Implementation of Body Area Network on Amazon AWS-IoT cloud9 Instances.}
+       \begin{cvitems}
+       \vspace{-0.5ex}
+       Implementation of Body Area Network on Amazon's AWS-IoT cloud9 Instances, where in body IoT devices were simulated to transmit real time data to an IoT sink, where data was analysed and alerts were sent to doctors.  
+       \comment{
+        \item{Implementation of Body Area Network on Amazon AWS-IoT cloud9 Instances.}
+        }
       \end{cvitems}
     }
-  \cventry
-    {Game based on Artificial Intelligence}
-    {Connect 4}
+  \cvproject
+    {Connect 4 - based on Artificial Intelligence}
+    %{Connect 4}
     {
     \ifthenelse{\value{ats}=1}
     {}
@@ -39,12 +48,16 @@
     {Jan. 2020 - May. 2020}
     {
       \begin{cvitems}
+      \vspace{-0.5ex}
+      A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Exptimax algorithms, where different agents played against each other or againt a human via a user interface implemented in python using pygame.
+      \comment{
         \item {A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Exptimax algorithms.}
+        }
       \end{cvitems}
     }
-  \cventry
+  \cvproject
     {Twitter Sentiment Analysis}
-    {Sentiment Analysis}
+    %{Sentiment Analysis}
     {
     \ifthenelse{\value{ats}=1}
     {}
@@ -53,9 +66,29 @@
     {Jan. 2020 - May. 2020}
     {
       \begin{cvitems}
+      \vspace{-0.5ex}
+      Tweets from users were scraped from twitter, and the tweets were pre-processed and analysed. This data was used to generate an opinion poll which used text analytics techniques to find indicator to predict the election results.
+      \comment{
         \item {An opinion poll where public tweets considered as an indicator to predict the actual election results.}
+        }
       \end{cvitems}
     }
+  \cvproject
+    {Statistical Data Analysis of Wine Reviews}
+    %{Sentiment Analysis}
+    {
+    \ifthenelse{\value{ats}=1}
+    {}
+    {\href{https://github.com/mukeshmk/statistical-modelling}{\faGithubSquare\ statistical-modelling}}
+    }
+    {Jan. 2020 - May. 2020}
+    {
+      \begin{cvitems}
+      \vspace{-0.5ex}
+        Used Inferential and Bayesian statistics to build ML models in R on wine review dataset. Regression and Clustering analysis were performed to answer statistical questions. Gibbs sampler was used to generate sample data on which MCMC tests were performed and results visualised using ggplot library.
+      \end{cvitems}
+    }
+
 %%comments
 \comment{
   \cventry

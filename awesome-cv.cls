@@ -109,6 +109,7 @@
 %% Page Layout
 % Configure page margins with geometry
 \geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+%\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -290,6 +291,7 @@
 
 % Defines writer's infolink (optional use for ATS)
 % Usage: \infolink{info}
+\newcommand*{\infoaddress}[1]{\def\@infoaddress{#1}}
 \newcommand*{\infoemail}[1]{\def\@infoemail{#1}}
 \newcommand*{\infomobile}[1]{\def\@infomobile{#1}}
 \newcommand*{\infohome}[1]{\def\@infohome{#1}}
@@ -433,6 +435,12 @@
         {}
         {
           \@infoemail \quad|
+          \setbool{isstart}{false}
+        }
+    \ifthenelse{\isundefined{\@infoaddress}}
+        {}
+        {
+          \@infoaddress \quad|
           \setbool{isstart}{false}
         }
       \ifthenelse{\isundefined{\@infolinkedin}}
@@ -610,7 +618,7 @@
   \vspace{-1ex}
 }
 
-\newcommand*{\cventrypart}[4]{
+\newcommand*{\cvexperiencecontinued}[4]{
   \vspace{-1ex}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
@@ -618,6 +626,19 @@
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\}
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\}
+    \multicolumn{2}{L{17cm}}{\descriptionstyle{#4}} \\
+  \end{tabular*}
+  \vspace{-1ex}
+}
+
+\newcommand*{\cvproject}[4]{
+  \vspace{-1ex}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
+    \ifempty{#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrytitlestyle{#1} & \entrydatestyle{#3} \\}
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#4}} \\
   \end{tabular*}
   \vspace{-1ex}
