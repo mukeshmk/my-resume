@@ -54,16 +54,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
 \name{Mukesh} {Arambakam}
-\address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
 %%% Social
 \ifthenelse{\value{ats}=1}
 {
 \infomobile{(+353) 89-4960-450}
+\infoaddress{Dublin, Ireland}
 \infoemail{amukesh.mk@gmail.com}
 \infohome{http://mukeshmk.github.io/}
 \infolinkedin{https://www.linkedin.com/in/mukeshmk95/}
 }
 {
+\address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
 \mobile{(+353) 89-4960-450}
 \email{amukesh.mk@gmail.com}
 \homepage{\href{http://mukeshmk.github.io/}{mukeshmk.github.io}}
@@ -72,12 +73,13 @@
 \stackoverflow{4014678}{mukesh-a}
 }
 
+\comment{
 \position{
     {\enskip\cdotp\enskip}
     Data Scientist in the Making
     {\enskip\cdotp\enskip}
     }
-
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Content
@@ -87,6 +89,14 @@
   {}
   {Mukesh Arambakam}
   {\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VARIABLE SET TO MAKE PART_TIME RESUME
+%     SET PART_TIME as 1 for Normal Resume
+%     SET DS_OR_BE as 0 for Part Time Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{part_time}
+\setcounter{part_time}{0}
 
 \begin{document}
 %%% Make a header for CV with personal data
@@ -98,7 +108,7 @@
 \begin{cventries}
 \lettertextstyle{
     \begin{flushleft}
-    \quad\quad\quad I am a Bi-Lingual (English and Tamil), B.Tech Graduate and a Master’s student from Trinity College of Dublin, with 2 years of work experience at Oracle India, Pvt. Ltd. I am highly skilled with computers and have an excellent communication and inter-personal skills, with a background in retail and cash-handling. I am flexible to work at any time and all days of the week.
+    \quad\quad\quad I am a Bi-Lingual (English and Tamil), Post Graduate and a Master’s student from Trinity College of Dublin, with 2 years of work experience at Oracle India, Pvt. Ltd. I am highly skilled with computers and have an excellent communication and inter-personal skills, with a background in retail and cash-handling. I am flexible to work at any time and all days of the week.
     \end{flushleft}
   }
 \end{cventries}
@@ -158,26 +168,12 @@
     {Application Engineer}
     {Oracle India, Pvt. Ltd.}
     {Bangalore, India}
-{Jul. 2017 - Aug. 2019}
+    {Jul. 2017 - Aug. 2019}
     {}
 \end{cventries}
 
 \vspace{-2.0ex}
 %% Education
-\cvsection{Education}
-\begin{cventries}
-  \cventry
-    {M.Sc. in Data Science}
-    {Trinity College of Dublin}
-    {expecting for 1:1}
-    {2019 - 2020}
-    {}
-  \cventry
-    {B.Tech. in Computer Science and Engineering}
-    {Amrita School of Engineering}
-    {CGPA: 8.37/10.0}
-    {2013 - 2017}
-    {}
-\end{cventries}
+\import{\sectiondir}{education.tex}
 
 \end{document}
