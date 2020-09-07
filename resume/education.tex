@@ -2,15 +2,18 @@
 \vspace{0.5ex}
 \begin{cventries}
   \cventry
-    {\textbf{M.Sc. in Data Science}}
+    {M.Sc. in Data Science}
     {Trinity College of Dublin}
-    {expecting for 1:1}
+    {expecting 1:1}
     {2019 - 2020}
     {
         \ifthenelse{\value{part_time}=1}
-        {\textit{Relevant Course Work}: Machine Learning, Data Analytics, Artificial Intelligence, Optimisation Algorithms for Data Analysis, Knowledge and Data Engineering, Text Analysis, Applied Statistical Modelling, Data Visualisation}
+        {
+        \comment{\textit{Relevant Course Work}: Machine Learning, Data Analytics, Artificial Intelligence, Optimisation Algorithms for Data Analysis, Knowledge and Data Engineering, Text Analysis, Applied Statistical Modelling, Data Visualisation}
+        }
         {}
     }
+    \vspace{-2.5ex}
     \ifthenelse{\value{part_time}=1}
     {\begin{cvskills}
         \cvskill{Thesis:}
@@ -20,11 +23,16 @@
         \ifthenelse{\value{ats}=1}
         {\textbf{FMLearn}}
         {{\href{https://github.com/mukeshmk/fm-learn}{\faGithubSquare\ \textbf{FMLearn}}}}}, an application which allows the exchange of meta-data about machine learning models and data for the purpose of meta-learned algorithm selection and configuration.}
+        
+        \comment{
+        \cvskill{}
+        {The algorithm selection problem characterises the challenge of finding an effective algorithm for a given dataset on an instance-by-instance basis. FMLearn overcomes this time consuming task by using historic performance data. A model is trained and is used to predict the best performing algorithm for a previously seen or unseen dataset.}
+        }
     \end{cvskills}}
     {}
 
   \cventry
-    {\textbf{B.Tech. in Computer Science and Engineering}}
+    {B.Tech. in Computer Science and Engineering}
     {Amrita School of Engineering}
     {CGPA: 8.37/10.0}
     {2013 - 2017}

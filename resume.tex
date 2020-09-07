@@ -116,36 +116,22 @@
 \makecvheader
 
 %%% Import contents
+%%% Contents for Page 1
 \ifthenelse{\value{ds_or_be}=1}
 {
-%%% Contents for Page 1
 \import{\sectiondir}{personalsummary-ds.tex}
-\import{\sectiondir}{skills.tex}
-\import{\sectiondir}{education.tex}
-\import{\sectiondir}{projects.tex}
-\pagebreak
-
-%%% Contents for Page 2
-\import{\sectiondir}{publications.tex}
-\import{\sectiondir}{onlinecourses.tex}
-\import{\sectiondir}{experience.tex}
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{hobbiesandintrests.tex}
 }
 {
-%%% Contents for Page 1
 \import{\sectiondir}{personalsummary-be.tex}
+}
 \import{\sectiondir}{skills.tex}
 \import{\sectiondir}{experience.tex}
-\pagebreak
+\import{\sectiondir}{education.tex}
+\comment{\pagebreak}
 
 %%% Contents for Page 2
-\import{\sectiondir}{education.tex}
 \import{\sectiondir}{publications.tex}
-\import{\sectiondir}{projects.tex}
 \import{\sectiondir}{onlinecourses.tex}
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{hobbiesandintrests.tex}
+\import{\sectiondir}{projects.tex}
 
-}
 \end{document}

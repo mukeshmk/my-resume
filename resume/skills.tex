@@ -1,11 +1,21 @@
 \cvsection{Skills}
 \begin{cvskills}
   \cvskill
-    {Operating System:}
-    {Windows, Linux\comment{, MacOS}}
-  \cvskill
     {Programming Languages:}
     {Python, Java, R, JavaScript, \comment{TypeScript, Go, C, } C++, SQL, PL/SQL}
+  \ifthenelse{\value{ds_or_be}=1}
+  {
+  \cvskill
+    {Machine Learning Libraries}
+    {Scikit-learn, TensorFlow, Keras, NumPy, Pandas, Matplotlib, OpenCV, NLTK, AutoSklearn}
+  \cvskill
+    {Frameworks:}
+    {Hibernate, Spring, Spring Boot, Mockito, RESTful APIs, Kafka, Zookeeper, Flask, Express}
+  \cvskill
+    {Web Technologies:}
+    {React, Node.js, \comment{Material UI, }Angular, jQuery, HTML, CSS, Bootstrap}
+  }
+  {
   \cvskill
     {Frameworks:}
     {Hibernate, Spring, Spring Boot, Mockito, RESTful APIs, Kafka, Zookeeper, Flask, Express}
@@ -15,6 +25,13 @@
   \cvskill
     {Machine Learning Libraries}
     {Scikit-learn, TensorFlow, Keras, NumPy, Pandas, Matplotlib, OpenCV, NLTK, AutoSklearn}
+  }
+  \cvskill
+    {Operating System:}
+    {Windows,  Linux\comment{, Unix (Ubuntu), MacOS}}
+  
+    
+\comment{
   \cvskill
     {Databases:}
     {Oracle SQL, MySQL, PostgreSQL, MongoDB}
@@ -23,11 +40,16 @@
     {VSCode, Intellij, Eclipse, SQL Developer, Power BI, Ant, Oracle Weblogic12c}
   \cvskill
     {Version Control \& CI/CD Tools:}
-    {git, GitHub, TortoiseHG, Jenkins, ALM, Jira\comment{, Docker, Kubernetes}}
+    {git, GitHub, TortoiseHG, Jenkins, ALM, Jira, Bash\comment{, Docker, Kubernetes}}
   \cvskill
     {Lifecycle Methodologies:}
     {Agile, Waterfall}
   \cvskill
     {Professional Skills:}
     {Team Player, Effective Communicator, Adaptable Decision Maker\comment{, Leadership, Mentoring}}
+   }
+   
+   \cvskill
+    {Other Technologies:}
+    {git, GitHub, MySQL, MongoDB, Power BI, Tableau, Jira, Bash}
 \end{cvskills}
