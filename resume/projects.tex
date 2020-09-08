@@ -13,8 +13,13 @@
     {
       \begin{cvitems}
       \vspace{-0.5ex}
-        \comment{Image and Audio captchas of varying length were parallelly generated, and the data was pre-processed to build a Convolutional Neural Network using TensorFlow. The model was used to make real time predictions on captcha.}
+        \ifthenelse{\value{res_cv}=1}
+        {
         \item {Parallelized image and audio captcha solver based on TensorFlow’s Convolutional Neural Networks.}
+        }
+        {
+        Image and Audio captchas were parallelly generated, images were preprocessed using contour detection, thresholding and audio was converted to images using mel-spectograms. This data was used to build a Convolutional Neural Network which achived 93\% accuracy using Python, TensorFlow, Keras, OpenCV, NumPy, matplotlib, etc.
+        }
       \end{cvitems}
     }
   \cvproject
@@ -29,8 +34,13 @@
     {
        \begin{cvitems}
        \vspace{-0.5ex}
-       \comment{Implementation of Body Area Network on Amazon's AWS-IoT cloud9 Instances, where in body IoT devices were simulated to transmit real time data to an IoT sink, where data was analysed and alerts were sent to doctors.}  
+        \ifthenelse{\value{res_cv}=1}
+        {
         \item{Realised of a real time Body Area Network simulator on Amazon's AWS-IoT cloud9 Instances.}
+        }
+        {
+        Implementation of Body Area Network on Amazon's AWS-IoT cloud9 Instances, where IoT devices were simulated to transmit real time data and communicate between each other in a peer-to-peer protocol using JavaScript, AWS Cloud9 Instances, EC2, Lambda, etc.
+        }
       \end{cvitems}
     }
   \cvproject
@@ -45,8 +55,13 @@
     {
       \begin{cvitems}
       \vspace{-0.5ex}
-      \comment{A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Exptimax algorithms, where different agents played against each other or againt a human via a user interface implemented in python using pygame.}
-        \item {A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Exptimax algorithms.}
+      \ifthenelse{\value{res_cv}=1}
+      {
+      \item {A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Exptimax algorithms.} 
+      }
+      {
+      A multi-agent implementation of the game Connect-4 using Markov Chain Tree Search, Minimax and Exptimax algorithms, where different agents played against each other or againt a human via a user interface implemented in python using pygame and NumPy.
+      }
       \end{cvitems}
     }
   \cvproject
@@ -61,8 +76,13 @@
     {
       \begin{cvitems}
       \vspace{-0.5ex}
-      \comment{Tweets from users were scraped from twitter, and the data was pre-processed and analysed to generate an opinion poll using text analytics techniques to find indicators to predict the election results.}
-        \item {An opinion poll where public tweets are considered as an indicator to predict the election results.}
+      \ifthenelse{\value{res_cv}=1}
+      {
+      \item {An opinion poll where public tweets are considered as an indicator to predict the election results.}
+      }
+      {
+      Tweets from users were scraped from twitter, and the data was pre-processed using NLTK's segmentation, tokenization, lemmatization and analysed using a machine learning algorithm to generate an opinion poll using text analytics techniques to find indicators to predict the election results.
+      }
       \end{cvitems}
     }
   \cvproject
@@ -78,9 +98,12 @@
     {
       \begin{cvitems}
       \vspace{-0.5ex}
-        \comment{Inferential and Bayesian statistical techniques were applied to build a ML model in R on wine review dataset. Regression and Clustering analysis were performed to answer statistical questions. Sample data was generated with the help of Gibbs sampler on which MCMC tests were performed and results visualised using ggplot library.}
-            %\item Inferential and Bayesian statistical techniques were applied to build a ML model in R.
-            \item Inferential statistical and Bayesian analytics techniques were applied to build a ML model in R.
+      \ifthenelse{\value{res_cv}=1}
+      {
+      \item Inferential statistical and Bayesian analytics techniques were applied to build a ML model in R.}
+      {
+      Inferential and Bayesian statistical techniques were applied to build a ML model in R on wine review dataset. Regression and Clustering analysis were performed to answer statistical questions. Sample data was generated with the help of Gibbs sampler on which MCMC tests were performed and results visualised using ggplot library.
+      }
       \end{cvitems}
     }
 
