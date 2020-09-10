@@ -15,7 +15,7 @@
       \vspace{-0.5ex}
         \ifthenelse{\value{res_cv}=1}
         {
-        \item {Parallelized image and audio captcha solver based on TensorFlow’s Convolutional Neural Networks.}
+        \item {Parallelised captcha generator and solver with 93\% accuracy built using TensorFlow’s CNN model.}
         }
         {
         Image and Audio captchas were parallelly generated, images were preprocessed using contour detection, thresholding and audio was converted to images using mel-spectograms. This data was used to build a Convolutional Neural Network which achived 93\% accuracy using Python, TensorFlow, Keras, OpenCV, NumPy, matplotlib, etc.
@@ -36,7 +36,7 @@
        \vspace{-0.5ex}
         \ifthenelse{\value{res_cv}=1}
         {
-        \item{Realised of a real time Body Area Network simulator on Amazon's AWS-IoT cloud9 Instances.}
+        \item{Realised of a real-time Body Area Network simulator on Amazon's AWS-IoT cloud9 Instances.}
         }
         {
         Implementation of Body Area Network on Amazon's AWS-IoT cloud9 Instances, where IoT devices were simulated to transmit real time data and communicate between each other in a peer-to-peer protocol using JavaScript, AWS Cloud9 Instances, EC2, Lambda, etc.
@@ -78,7 +78,7 @@
       \vspace{-0.5ex}
       \ifthenelse{\value{res_cv}=1}
       {
-      \item {An opinion poll where public tweets are considered as an indicator to predict the election results.}
+      \item {An opinion poll where 250,000 public tweets are considered as an indicator to predict the election results.}
       }
       {
       Tweets from users were scraped from twitter, and the data was pre-processed using NLTK's segmentation, tokenization, lemmatization and analysed using a machine learning algorithm to generate an opinion poll using text analytics techniques to find indicators to predict the election results.
@@ -100,9 +100,31 @@
       \vspace{-0.5ex}
       \ifthenelse{\value{res_cv}=1}
       {
-      \item Inferential statistical and Bayesian analytics techniques were applied to build a ML model in R.}
+      \item \comment{Inferential statistical and }Bayesian analytics and Predictive modelling techniques were applied to build an ML model in R.}
       {
       Inferential and Bayesian statistical techniques were applied to build a ML model in R on wine review dataset. Regression and Clustering analysis were performed to answer statistical questions. Sample data was generated with the help of Gibbs sampler on which MCMC tests were performed and results visualised using ggplot library.
+      }
+      \end{cvitems}
+    }
+  \cvproject
+    {Income Prediction - Kaggle Conteest}
+    %{Statistical Data Analysis of Wine Reviews}
+    %{Sentiment Analysis}
+    {
+    \ifthenelse{\value{ats}=1}
+    {}
+    {\href{https://github.com/mukeshmk/tcdml1920-income-ind}{\faGithubSquare\ income-prediction}}
+    }
+    {Sept. 2019 - Nov. 2019}
+    {
+      \begin{cvitems}
+      \vspace{-0.5ex}
+      \ifthenelse{\value{res_cv}=1}
+      {
+      \item {Built an ML model by using regression analysis after pre-processing data using feature engineering techniques.}
+      }
+      {
+      Built an ML model in Python on an income dataset. Pre-processed data using feature engineering, visualized correlations and outliers, used Target Encoding, applied regression techniques to predict the income by reducing the RMSE.
       }
       \end{cvitems}
     }

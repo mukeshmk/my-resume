@@ -135,9 +135,11 @@
 \import{\sectiondir}{skills.tex}
 \import{\sectiondir}{experience.tex}
 \import{\sectiondir}{education.tex}
-\comment{\pagebreak}
 
 %%% Contents for Page 2
+\ifthenelse{\value{res_cv}=1}
+{\pagebreak}
+{}
 \import{\sectiondir}{publications.tex}
 \import{\sectiondir}{onlinecourses.tex}
 \import{\sectiondir}{projects.tex}
