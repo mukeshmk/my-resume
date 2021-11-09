@@ -88,13 +88,13 @@
 \infolinkedin{https://www.linkedin.com/in/mukeshmk95/}
 }
 {
-\address{Apartment 20, St. James's Court, Echlin Street, Dublin 8}
+\address{Dublin, Ireland}
 \mobile{(+353) 89-4960-450}
 \email{amukesh.mk@gmail.com}
 \homepage{\href{http://mukeshmk.github.io/}{mukeshmk.github.io}}
 \github{mukeshmk}
 \linkedin{mukeshmk95}
-\stackoverflow{4014678}{mukesh-a}
+%\stackoverflow{4014678}{mukesh-a}
 }
 %\twitter{amukeshmk}
 %\kaggle{mukeshmk95}
@@ -138,10 +138,16 @@
 
 %%% Contents for Page 2
 \ifthenelse{\value{res_cv}=1}
-{\pagebreak}
-{}
+{
+\import{\sectiondir}{publications.tex}
+\comment{\pagebreak}
+}
+{
 \import{\sectiondir}{publications.tex}
 \import{\sectiondir}{onlinecourses.tex}
 \import{\sectiondir}{projects.tex}
+}
+
+
 
 \end{document}
