@@ -4,31 +4,72 @@
     {Senior Machine Learning Engineer (IC-3)}
     {Oracle Corporation}
     {}
-    {
-    \begin{cvitems}
-    \hspace{-2ex}
-        Oracle is a world leader in database management software, cloud engineered systems, and enterprise software products. I worked as part of the Internal Product Solutions Domain, with the Neural Machine Translation (NMT) Team
-    \end{cvitems}
-    \vspace{-2ex}
-    }
+    {}
     {Nov. 2020 - Current}
     {
-      \begin{cvitems}
-        \item {Involved in the Research and Development of techniques used in Dataset Analysis, Data Cleaning and Engine Evaluation}
-        \item {Responsible for various stages of development in the NMT Pipeline: Data Cleaning, Model Training and Evaluation}
-        \item {Improved the creation of user-generated data for Model fine tuning post training}
-      \end{cvitems}
+      \begin{cvitemswithheading}
+        {Language Detection Enhancements:}
+        \item {Expanded language detection coverage from 45 to 192 languages.}
+        \item {Introduced a 3-stage hierarchical language detection architecture to differentiate sub-cultural languages.}
+        \item {Improved language detection accuracy by 90\% for very short strings (<12 characters).}
+        \item {Refactored the codebase using robust system design patterns and FastAPI to significantly boost performance by 3x times.}
+        \item {Packaged and published ONNX models with architecture-aware configurations for cross-compatibility.}
+        \item {Used architecture-specific optimizations and model quantization to reduce memory footprint by 50\%.}
+      \end{cvitemswithheading}
     }
+  \cvexpproj
+  {
+    \begin{cvitemswithheading}
+        {LLMs \& Agentic AI Systems:}
+        \item {Launched an agentic AI system with LangGraph enabling LLM calls to Translation \& LangDetect MCP servers as a POC.}
+        \item {Implemented RAG systems with vector databases for domain-specific data extraction and translation enhancement.}
+        \item {Designed a prompt engineering solutions for back-translation, domain classification, post-editing, and data generation with sophisticated tool calling mechanisms.}
+        \item {Used prompt chaining techniques for multi-step LLM workflows including translation evaluation, iterative improvement, pivot-translation and post-editing.}
+      \end{cvitemswithheading}
+  }
+  \cvexpproj
+  {
+    \begin{cvitemswithheading}
+        {Data Processing \& Analysis}
+         \item {Developed a dataset analysis framework from scratch for MT training data statistics.}
+        \item {Built a monolingual data generator for low-resource languages using n-grams and vector search.}
+        \item {Built a tool to identify vocabulary gaps across languages using n-gram and embedding analysis.}
+        \item {Improved the data-cleaning filters using alignment models, foreign language removal, length ratios, and toxicity checks.}
+        \item {Used zero-shot and few-shot learning for domain classification and data categorization tasks.}
+    \end{cvitemswithheading}
+  }
+  \cvexpproj
+  {
+    \begin{cvitemswithheading}
+        {Engine Training, Fine-Tuning \& Optimization:}
+        \item {Updated the Training pipeline to generate word alignment, length ratio models for data cleaning and evaluations.}
+        \item {Developed a Monolingual Engine Training pipeline and de-prioritized the tagged monolingual data during training.}
+        \item {Fine-tuned translation models using PEFT techniques for efficient adaptation to domain-specific tasks.}
+        \item {Used quantization strategies like QLoRA for deploying large language models in resource-constrained environments.}
+      \end{cvitemswithheading}
+  }
+  \cvexpproj
+  {
+    \begin{cvitemswithheading}
+        {Advanced Evaluation \& Quality Assurance}
+        \item {Re-engineered the translation evaluation pipeline, implementing modern architectures and optimizing performance.}
+        \item {Designed custom translation quality rubrics with linguists and applied LLM-as-a-Judge via direct assessment.}
+        \item {Integrated G-Eval metric and "LLM as a Judge" framework for comprehensive LLM-based translation assessment.}
+        \item {Created visualization for evaluation scores using custom-built tools.}
+        \item {Added various metrics like Comet, XComet, BERTScore, CometQE and Length Ratio checks to evaluation framework.}
+        \item {Assessed LLM translation consistency with Translate-then-Evaluate and LLM-as-a-Judge.}
+    \end{cvitemswithheading}
+  }
   \cvexperiencecontinued
     {Applications Engineer (IC-2)}
     {}
     {June 2019 - Aug. 2019}
     {
       \begin{cvitems}
-        \item {Coordinated with multiple global teams, business analysts and stake-holders to develop a cross-platform application.}
+        \item {Coordinated with multiple global teams, business analysts, and stakeholders to develop a cross-platform application.}
         \item {Lead developer in overhauling the project security flow of the Product and introduced 2 new features.}
         \item {Implemented a micro-service which communicates between tenants in a \textit{Multi-Tenant Architecture}.}
-        \item {Mentored 10 junior team members, provided insights about the product's internal working and underlying tools.}
+        \item {Mentored 10 junior team members, and provided insights about the product's internal working and underlying tools.}
       \end{cvitems}
     }
   \cvexperiencecontinued
@@ -43,63 +84,6 @@
         \item {Improved the performance of \textit{search framework} by 20\%, using query optimization techniques.}
       \end{cvitems}
     }
-\comment{
-  \cvexperience
-    {Data Science Intern}
-    {Augray Private, Ltd.}
-    {}
-    {
-    \begin{cvitems}
-    \hspace{-2ex}
-        Augray helps businesses thrive in Sales, Marketing and operational improvements using eXtended Reality. I worked on a PoC of a new product for the company using Python, TensorFlow, Keras, Pandas, OpenCV and other technologies to build a CNN model.
-    \end{cvitems}
-    \vspace{-2ex}
-    }
-    {July 2020 - Sept. 2020}
-    {
-      \begin{cvitems}
-        \item {Part of a global team of 6, where we materialised an Augmented Reality based application.}
-        \comment {Refined the image and video preprocessing procedure for the application.}
-        \comment {Built supervised models to identify \& extract features from images using concepts like back propagation \& ReLU}
-        \item {Used data extraction, exploration and transformation techniques to discover opportunities \& identify trends.}
-        \comment {Used techniques like manipulating, transforming, and analyzing complex data at a large scale}
-        \item {Part of the Research and Development team instrumental in shaping the Convolutional Neural Network.}
-      \end{cvitems}
-    }
-    }
-  \comment{
-  \cvexperiencecontinued
-    {Graduate Intern}
-    {}
-    {Jan. 2017 - June 2017}
-    {
-      \begin{cvitems}
-        \item {Worked as a Selenium Automation Engineer, automating over a 100 test cases.}
-        \item {Maintained high product quality standards while working as a Quality Assurance Engineer.}
-      \end{cvitems}
-    }
-    }
-\comment{
-  \cventry
-    {Intern}
-    {Cisco Systems Private, Ltd.}
-    {}
-    {Oct. 2016 - Mar. 2017}
-    {
-      \begin{cvitems}
-        \item {Involved in the platform transformation process of an internal product: \textbf{Cordys Process System}.}
-        \item {Part of a team of 5, who designed the UX, Architecture and Database Schema for the application.}
-      \end{cvitems} 
-    }
-  \cventry
-    {Intern}
-    {Hitachi Solutions, Ltd.}
-    {}
-    {July 2016 - July 2016}
-    {
-      \begin{cvitems}
-        \item {Created a web application with an authentication system.}    
-      \end{cvitems}
-    }
-}
+
+
 \end{cventries}

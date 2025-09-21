@@ -650,10 +650,25 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
-    \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\}
-      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\}
+    \ifempty{#2}
+        {
+            \entrypositionstyle{#1} & \entrydatestyle{#3} \\
+        }
+        {
+            \entrypositionstyle{#1} & \entrydatestyle{#3} \\
+            \descriptionstyle{#2} \\
+        }
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#4}} \\
+  \end{tabular*}
+  \vspace{-1ex}
+}
+
+\newcommand*{\cvexpproj}[1]{
+  \vspace{-1ex}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
+    \multicolumn{2}{L{17cm}}{\descriptionstyle{#1}} \\
   \end{tabular*}
   \vspace{-1ex}
 }
@@ -752,6 +767,20 @@
   \end{justify}
   \vspace{-2mm}
 }
+
+\newenvironment{cvitemswithheading}[1]{ % Accepts one argument for the heading
+\textbf{#1} % Add heading in bold
+\begin{justify}
+\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+\setlength{\parskip}{0pt}
+\renewcommand{\labelitemi}{\bullet}
+}{
+\end{itemize}
+\end{justify}
+\vspace{-2mm}
+}
+
+
 
 
 %-------------------------------------------------------------------------------

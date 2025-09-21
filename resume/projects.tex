@@ -1,5 +1,21 @@
-\cvsection{Projects}
+\cvsection{Personal Projects}
 \begin{cventries}
+   \cvproject
+     {Home Lab Infrastructure}
+     {{}}
+     {}
+     {
+        \begin{cvitems}
+        \vspace{-0.5ex}
+        \item {Built complex home lab environment using Proxmox virtualization platform with Docker LXCs.}
+        \item {Self-host comprehensive service ecosystem including Home Assistant, Nextcloud, Immich, Jellyfin, etc.}
+        \item {Implemented enterprise-grade authentication using Authelia SSO solution.}
+        \item {Manage network infrastructure with custom DNS and DHCP servers.}
+        \item {Secured remote access through Tailscale VPN and Funnels for all critical services.}
+        \item {Developed complex home automation using Home Assistant for smart home integration.}
+        \end{cvitems}
+     }
+     
    \cvproject
     {Image and Audio Captcha Solver}
     %{Captcha Solver}
@@ -18,28 +34,7 @@
         \item {Parallelised captcha generator and solver with 93\% accuracy built using TensorFlow’s CNN model.}
         }
         {
-        Image and Audio captchas were parallelly generated, images were preprocessed using contour detection, thresholding and audio was converted to images using mel-spectograms. This data was used to build a Convolutional Neural Network which achived 93\% accuracy using Python, TensorFlow, Keras, OpenCV, NumPy, matplotlib, etc.
-        }
-      \end{cvitems}
-    }
-  \cvproject
-    {Body Area Network Simulation}
-    %{BAN on AWS}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/ban-on-awscloud9}{\faGithubSquare\ ban-on-awscloud9}}
-    }
-    {\comment{Nov. 2019 - Dec. 2019}}
-    {
-       \begin{cvitems}
-       \vspace{-0.5ex}
-        \ifthenelse{\value{res_cv}=1}
-        {
-        \item{Designed a real-time Body Area Network simulator on Amazon's AWS-IoT cloud9 Instances.}
-        }
-        {
-        Implementation of Body Area Network on Amazon's AWS-IoT cloud9 Instances, where IoT devices were simulated to transmit real time data and communicate between each other in a peer-to-peer protocol using JavaScript, AWS Cloud9 Instances, EC2, etc.
+        Image and Audio captchas were parallelly generated, images were preprocessed using contour detection, and thresholding, and audio was converted to images using mel-spectrograms. This data was used to build a Convolutional Neural Network which achieved 93\% accuracy using Python, TensorFlow, Keras, OpenCV, NumPy, matplotlib, etc.
         }
       \end{cvitems}
     }
@@ -64,99 +59,4 @@
       }
       \end{cvitems}
     }
-  \cvproject
-    {Twitter Sentiment Analysis}
-    %{Sentiment Analysis}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/twitter-sentiment-analysis}{\faGithubSquare\ twitter-sentiment-analysis}}
-    }
-    {\comment{Jan. 2020 - May. 2020}}
-    {
-      \begin{cvitems}
-      \vspace{-0.5ex}
-      \ifthenelse{\value{res_cv}=1}
-      {
-      \item {An opinion poll where 250,000 public tweets are considered as an indicator to predict the election results.}
-      }
-      {
-      Tweets from users were scraped from twitter, and the data was pre-processed using NLTK's segmentation, tokenization, lemmatization and analysed using a machine learning algorithm to generate an opinion poll using text analytics techniques to find indicators to predict the election results.
-      }
-      \end{cvitems}
-    }
-  \cvproject
-    {Statistical Data Analysis and Modelling}
-    %{Statistical Data Analysis of Wine Reviews}
-    %{Sentiment Analysis}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/statistical-modelling}{\faGithubSquare\ statistical-modelling}}
-    }
-    {\comment{April 2020 - May. 2020}}
-    {
-      \begin{cvitems}
-      \vspace{-0.5ex}
-      \ifthenelse{\value{res_cv}=1}
-      {
-      \item \comment{Inferential statistical and }Bayesian analytics and Predictive modelling techniques were applied to build an ML model in R.
-      }
-      {
-      Inferential and Bayesian statistical techniques were applied to build a ML model in R on wine review dataset. Regression and Clustering analysis were performed to answer statistical questions. Sample data was generated with the help of Gibbs sampler on which MCMC tests were performed and results visualised using ggplot library.
-      }
-      \end{cvitems}
-    }
-  \cvproject
-    {Income Prediction - Kaggle Contest}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/tcdml1920-income-ind}{\faGithubSquare\ income-prediction}}
-    }
-    {\comment{Sept. 2019 - Nov. 2019}}
-    {
-      \begin{cvitems}
-      \vspace{-0.5ex}
-      \ifthenelse{\value{res_cv}=1}
-      {
-      \item {Built an ML model by using  predictive analytics after pre-processing data using feature engineering techniques.}
-      }
-      {
-      Built an ML model in Python on an income dataset. Pre-processed data using feature engineering, visualized correlations and outliers, used Target Encoding, applied regression techniques to predict the income by reducing the RMSE.
-      }
-      \end{cvitems}
-    }
-
-%%comments
-\comment{
-  \cventry
-    {Online Payment Portal}
-    {Pay Now}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/pay-now}{\faGithubSquare\ pay-now}}
-    }
-    {Apr. 2016 - May. 2016}
-    {
-      \begin{cvitems}
-        \item {An online payment portal developed using WAMP stack, where online transactions occur specific to a store.}
-      \end{cvitems}
-    }
-  \cventry
-    {A board game recreated}
-    {Agon}
-    {
-    \ifthenelse{\value{ats}=1}
-    {}
-    {\href{https://github.com/mukeshmk/agon}{\faGithubSquare\ agon}}
-    }
-    {Jul. 2011 - Mar. 2012}
-    {
-      \begin{cvitems}
-        \item {One of the oldest 2 player Hexagonal board games recreated using C++ graphics libraries involving complex strategies.}
-      \end{cvitems}
-    }
-}
 \end{cventries}
