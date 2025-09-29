@@ -296,6 +296,7 @@
 \newcommand*{\infomobile}[1]{\def\@infomobile{#1}}
 \newcommand*{\infohome}[1]{\def\@infohome{#1}}
 \newcommand*{\infolinkedin}[1]{\def\@infolinkedin{#1}}
+\newcommand*{\infovisa}[1]{\def\@infovisa{#1}}
 
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
@@ -441,6 +442,12 @@
         {}
         {
           \@infoaddress \quad|
+          \setbool{isstart}{false}
+        }
+    \ifthenelse{\isundefined{\@infovisa}}
+        {}
+        {
+          \@infovisa \quad|
           \setbool{isstart}{false}
         }
       \ifthenelse{\isundefined{\@infolinkedin}}
