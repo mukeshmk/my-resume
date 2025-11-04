@@ -126,29 +126,15 @@
 
 %%% Import contents
 %%% Contents for Page 1
-\ifthenelse{\value{ds_or_be}=1}
-{
 \import{\sectiondir}{personalsummary-ds.tex}
-}
-{
-\import{\sectiondir}{personalsummary-be.tex}
-}
 \import{\sectiondir}{skills.tex}
 \import{\sectiondir}{experience.tex}
-\import{\sectiondir}{education.tex}
 
 %%% Contents for Page 2
-\ifthenelse{\value{res_cv}=1}
-{
-\import{\sectiondir}{publications.tex}
-\import{\sectiondir}{projects.tex}
-\comment{\pagebreak}
-}
-{
+\import{\sectiondir}{education.tex}
 \import{\sectiondir}{publications.tex}
 \import{\sectiondir}{onlinecourses.tex}
 \import{\sectiondir}{projects.tex}
-}
 
 
 
